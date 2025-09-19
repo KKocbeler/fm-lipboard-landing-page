@@ -46,7 +46,6 @@ li {
 
 img {
     display: block;
-    max-width: 100%;
 }
 
 p {
@@ -322,8 +321,16 @@ footer {
     .footer-body {
         flex-direction: row;
         justify-content: space-between;
+        gap: 8rem;
     }
     .footer__menu-list {
         flex-direction: row;
+        max-width: 420px;
+    }
+
+    .footer__media {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
     }
 }
