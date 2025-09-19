@@ -113,6 +113,11 @@ h3 {
     text-align: center;
     border-radius: 5rem;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all .3s;
+}
+
+.download a:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .download__ios {
@@ -286,10 +291,26 @@ footer {
     gap: 2rem;
 }
 
+.footer__menu-list li a {
+    transition: all .3s;
+}
+
+.footer__menu-list li:hover a{
+    color: var(--green-500);
+}
+
 .footer__media-list {
     display: flex;
     align-items: center;
     gap: 3rem;
+}
+
+.footer__media-list img {
+    transition: all .3s;
+}
+
+.footer__media-list li:hover img {
+    filter: brightness(0) saturate(100%) invert(61%) sepia(83%) saturate(380%) hue-rotate(121deg) brightness(85%) contrast(90%);
 }
 
 @media (min-width: 768px) {
@@ -300,5 +321,6 @@ footer {
     .footer__menu-list {
         flex-direction: row;
     }
+
 
 }
