@@ -46,6 +46,7 @@ li {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 p {
@@ -311,6 +312,7 @@ footer {
 
 .footer__media-list img {
     transition: all .3s;
+    max-width: 3rem;
 }
 
 .footer__media-list li:hover img {
